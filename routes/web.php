@@ -40,10 +40,10 @@ Route::post('/form', function (Request $request) {
         'content' => $request->input('content'),
     ]);
 
-    return redirect()->route('thank-you-page');
+    return redirect()->route('thank-you');
 
 })->name('form');
 
 Route::get('/thank-you', function () {
-    return view('thankyou');
+    return view('thank-you');
 })->name('thank-you');
