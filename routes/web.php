@@ -27,7 +27,7 @@ Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
-Route::put('/form', function (Request $request) {
+Route::post('/form', function (Request $request) {
     $request->validate([
         'name' => ['required'],
         'email' => ['required', 'email'],
